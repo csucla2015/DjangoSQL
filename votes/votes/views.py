@@ -22,7 +22,7 @@ def home2(request):
 	print request.POST['group1']
  	return render(
 		request,
-        	'/home/meet/DjangoProject/votes/templates/index2.html',
+        	'index2.html',
        		context_instance = RequestContext(request,
         	{
 			"result" : result,
@@ -34,7 +34,7 @@ def home(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        '/home/meet/DjangoProject/votes/templates/index.html',
+        'index.html',
         context_instance = RequestContext(request,
         {
 
@@ -48,7 +48,7 @@ def contact(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        '/home/meet/DjangoProject/votes/templates/contact.html',
+        'contact.html',
         context_instance = RequestContext(request,
         {
             'title':'Contact',
@@ -62,7 +62,7 @@ def about(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        '/home/meet/DjangoProject/votes/templates/about.html',
+        'about.html',
         context_instance = RequestContext(request,
         {
             'title':'About',

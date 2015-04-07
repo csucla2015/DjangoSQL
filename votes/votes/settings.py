@@ -63,10 +63,11 @@ STATIC_ROOT = ''
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = '/static/'
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+
 STATIC_ROOT = os.path.join(SETTINGS_PATH, 'static','static_root/')
 
 STATICFILES_DIRS = (
- 	os.path.join(SETTINGS_PATH, 'static','static_dirs/ '),													
+ 	os.path.join(SETTINGS_PATH, 'static','static_dirs/'),													
 )
 
 # List of finder classes that know how to find static files in
