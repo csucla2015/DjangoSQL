@@ -5,7 +5,7 @@ from datetime import datetime
 import pymssql
 def home2(request):
 
-	conn = pymssql.connect(server='fejcz4m54q.database.windows.net', user='meet_bhagdev@fejcz4m54q', password='channelV1', database='meet_bhagdev')
+	conn = pymssql.connect(server='fejcz4m54q.database.windows.net', user='meet_bhagdev@fejcz4m54q', password='*********', database='meet_bhagdev')
 	cursor = conn.cursor()
 	query = str("""UPDATE votes SET value = value + 1 WHERE name = '""")+ str(request.POST['group1']) + str("""' """)
 	print query
