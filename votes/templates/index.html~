@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> {{title}} </h1>
+<h1> {{year}} </h1>
+<!--
+<form method = "POST" action="/home2/"> {% csrf_token %}
+{{form.as_p}}
+<input type = 'submit' value = 'Submit' class = 'btn'/>
+</form>
+-->
+<form method = "POST" action="/home2/"> {% csrf_token %}
+<input type = "radio" = name = "group1" value = "NodeJS"> NodeJS<br>
+<input type = "radio" = name = "group1" value = "Python"> Python<br>
+<input type = "radio" = name = "group1" value = "C#"> C#<br>
+<input type = 'submit' value = 'Submit' class = 'btn'/>
+
+{% endblock %}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
